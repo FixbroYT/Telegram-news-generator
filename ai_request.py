@@ -6,7 +6,7 @@ import os
 load_dotenv()
 
 API_URL = "https://api.deepinfra.com/v1/inference/meta-llama/Llama-2-70b-chat-hf"
-HEADERS = {"Authorization": f"Bearer {os.getenv("API_KEY")}"}
+HEADERS = {"Authorization": f"Bearer {os.getenv('API_KEY')}"}
 
 
 def generate_post(prompt: str, max_tokens: int = 200):
