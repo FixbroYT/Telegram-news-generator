@@ -2,6 +2,7 @@ import threading
 import time
 from flask import Flask
 from bot import start_bot
+import asyncio
 
 app = Flask(__name__)
 
