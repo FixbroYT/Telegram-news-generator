@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 
 def run_flask():
-    app.run(host="0.0.0.0", port=10000)
+    app.run(host="0.0.0.0", port=8080)
 
 
 threading.Thread(target=run_flask, daemon=True).start()
